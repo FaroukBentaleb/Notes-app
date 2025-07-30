@@ -13,7 +13,6 @@ A simple note-taking app with user authentication using Drizzle ORM and Neon Pos
 - Frontend: React + TypeScript
 - Backend: Node.js/Express
 - Database: Neon (PostgreSQL) + Drizzle ORM
-- Auth: JWT
 
 ## Setup
 
@@ -27,7 +26,6 @@ npm install
 
 ```bash
 DATABASE_URL="your_neon_connection_string"
-JWT_SECRET="your_random_secret_key"
 ```
 
 3. **Database schema (schema.ts)**:
