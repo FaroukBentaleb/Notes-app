@@ -2,11 +2,11 @@
 import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 
-export async function GET() {
+export async function GET(request: Request) {
   // Delete the cookie
   const cookieStore = await cookies();
   cookieStore.delete('currentUser');
   
-  // Redirect to login page
-  return NextResponse.redirect(new URL('/login', 'http://localhost:3000'));
+  const loginUrl = new URL('/login', request.url);
+  return NextResponse.redirect(loginUrl);
 }
