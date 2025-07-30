@@ -9,14 +9,6 @@ export const getUsers = async () => {
   return data;
 };
 
-export const addUser = async (id: number, username: string, email: string) => {
-  await getDb().insert(user).values({
-    id: id,
-    username: username,
-    email: email,
-  });
-  
-};
 
 export const deleteUser = async (id: number) => {
   await getDb().delete(user).where(eq(user.id, id));
