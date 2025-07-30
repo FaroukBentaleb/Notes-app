@@ -30,7 +30,7 @@ export default async function HomePage() {
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white shadow-sm py-4 px-6">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-800">{username}'s Todos</h1>
+          <h1 className="text-2xl font-bold text-gray-800">{username} s Todos</h1>
           <a 
             href="/logout" 
             className="px-4 py-2 text-sm text-red-600 hover:text-red-800 font-medium"
